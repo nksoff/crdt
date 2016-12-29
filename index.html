@@ -5,9 +5,10 @@ title: Главная
 
 <div class="posts">
   {% for part in site.parts %}
-  <div class="post" id="{{ part.tag }}">
+  {% assign id = part.path | replace:'_parts/','' | replace:'.md','' %}
+  <div class="post" id="{{ id }}">
     <h1 class="post-title">
-      <a href="#{{ part.tag }}">
+      <a href="#{{ id }}">
         {{ part.title }}
       </a>
     </h1>
