@@ -1,0 +1,18 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>{{ site.description }}</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.title == "Главная" %} active{% endif %}" href="/">Главная</a>
+    <a class="sidebar-nav-item" href="{{ site.github.repo }}">Исходники на GitHub</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }}.
+    </p>
+  </div>
+</div>

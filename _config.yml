@@ -1,0 +1,19 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            CRDT
+tagline:          'в распределенных веб-приложениях'
+description:      'Домашнее задание #1 по РИП. Jekyll, GitHub pages.'
+url:              http://lanyon.getpoole.com
+
+github:
+  repo:           https://github.com/nksoff
+
+collections:
+  parts:
+    output: false
