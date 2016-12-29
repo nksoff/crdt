@@ -3,6 +3,15 @@ layout: default
 title: Главная
 ---
 
+<a href="{{ site.assets_url }}/mindmap.png" target="_blank"><img src="{{ site.assets_url }}/mindmap.png" style="max-width: 90%" /></a>
+<ol>
+{% for part in site.parts %}
+{% assign id = part.path | replace:'_parts/','' | replace:'.md','' %}
+<li><a href="#{{ id }}">{{ part.title }}</a></li>
+{% endfor %}
+</ol>
+
+
 <div class="posts">
   {% for part in site.parts %}
   {% assign id = part.path | replace:'_parts/','' | replace:'.md','' %}

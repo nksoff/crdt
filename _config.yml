@@ -9,10 +9,10 @@ permalink:        pretty
 title:            CRDT
 tagline:          'в распределенных веб-приложениях'
 description:      'Домашнее задание #1 по РИП. Jekyll, GitHub pages.'
-url:              http://lanyon.getpoole.com
+assets_url:       '/crdt/assets'
 
 github:
-  repo:           https://github.com/nksoff
+  repo:           https://github.com/nksoff/crdt
 
 collections:
   parts:
